@@ -8,84 +8,94 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-white">
-    <nav class="flex items-center justify-between px-6 py-4">
-      <!-- Logo -->
-      <div class="flex items-center space-x-2">
-        <img src="./Asset/logo.png" class="h-8 w-auto" alt="logo" />
-      </div>
-
-      <!-- Navigation Links -->
-      <div class="hidden md:flex space-x-8 text-sm font-medium text-blue-900">
-        <div class="relative group cursor-pointer">
-          <span class="flex items-center space-x-1">
-            <span>Services</span>
-            <svg
-              class="w-4 h-4 transform group-hover:rotate-180 transition duration-300"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              />
+    <nav class="px-6 py-4 border-b border-gray-200">
+      <div class="flex flex-wrap items-center justify-between lg:justify-start">
+        <!-- Logo -->
+        <div class="flex items-center space-x-3 lg:mr-10 mr-6">
+          <img src="./Asset/logo.png" class="lg:h-[60px] h-[40px] w-auto" alt="logo" />
+        </div>
+    
+        <!-- Mobile toggle -->
+        <details class="md:hidden relative">
+          <summary class="list-none cursor-pointer">
+            <svg class="w-6 h-6 text-blue-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
             </svg>
-          </span>
-          <!-- Optional dropdown could go here -->
+          </summary>
+    
+          <!-- Mobile menu -->
+          <div class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg flex flex-col space-y-2 p-4 z-50">
+            <a href="#" class="hover:text-green-600">Services</a>
+            <a href="about.html" class="hover:text-green-600">About us</a>
+            <a href="#" class="hover:text-green-600">Resources</a>
+            <a href="#" class="hover:text-green-600">Contact us</a>
+          </div>
+        </details>
+    
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex flex-wrap lg:space-x-[100px] md:space-x-[20px] text-[18px] font-medium text-[#184E77]">
+          <div class="relative hover:text-green-600 group cursor-pointer flex items-center space-x-1">
+            <span>Services</span>
+            <svg class="w-4 h-4 transform group-hover:rotate-180 transition duration-300" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+          <a href="about.html" class="hover:text-green-600">About us</a>
+          <a href="#" class="hover:text-green-600">Resources</a>
+          <a href="#" class="hover:text-green-600">Contact us</a>
         </div>
-        <a href="#" class="hover:text-green-600">About us</a>
-        <a href="#" class="hover:text-green-600">Resources</a>
-        <a href="#" class="hover:text-green-600">Contact us</a>
       </div>
-
-      <!-- CTA Button
-        <a href="#" class="ml-4 bg-lime-200 hover:bg-lime-300 text-sm text-blue-900 font-semibold px-4 py-2 rounded transition">
-          Login / Get started
-        </a> -->
     </nav>
+    
+    
+    
     <section
-      class="relative h-screen bg-cover bg-center"
-      style="background-image: url('./Asset/iStock-2169505125-min.jpg')"
+    class="relative md:min-h-screen h-[700px]  bg-cover bg-center"
+    style="background-image: url('./Asset/iStock-2169505125-min.jpg')"
+  >
+    
+  
+    <!-- Content -->
+    <div
+      class="relative z-10 flex flex-col items-end text-white p-4 sm:p-8 md:pt-[100px] lg:pr-[150px] pt-[200px] text-right max-w-6xl ml-auto"
     >
-      <!-- Content -->
-      <div
-        class="absolute z-10 top-[200px] right-[150px] text-white max-w-4xl text-right flex flex-col items-end"
-      >
-        <!-- Heading -->
-        <h1 class="text-2xl sm:text-3xl md:text-4xl font-semibold leading-snug">
-          Collaborating with landowners, energy customers, and solar contractors
-          for efficient, sustainable solutions.
-        </h1>
-
-        <!-- Buttons -->
-        <div class="mt-6 flex flex-col sm:flex-row gap-4">
-          <a
-            href="#"
-            class="bg-lime-200 text-blue-900 px-5 py-2 rounded font-semibold hover:bg-lime-300 transition"
-          >
-            Discover our solutions
-          </a>
-          <a
-            href="#"
-            class="bg-lime-200 text-blue-900 px-5 py-2 rounded font-semibold hover:bg-lime-300 transition"
-          >
-            Partner with us
-          </a>
-        </div>
+      <!-- Heading -->
+      <h1 class="text-xl sm:text-2xl md:text-4xl font-semibold leading-snug">
+        Collaborating with landowners, energy customers, and solar contractors
+        for efficient, sustainable solutions.
+      </h1>
+  
+      <!-- Buttons -->
+      <div class="mt-6 flex flex-col sm:flex-row gap-4">
+        <a
+          href="#"
+          class="bg-lime-200 text-blue-900 px-5 py-2 rounded font-semibold hover:bg-lime-300 transition text-center"
+        >
+          Discover our solutions
+        </a>
+        <a
+          href="#"
+          class="bg-lime-200 text-blue-900 px-5 py-2 rounded font-semibold hover:bg-lime-300 transition text-center"
+        >
+          Partner with us
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
+  
 
     <section class="py-16 bg-white text-center px-4">
       <div class="max-w-2xl text-center mx-auto">
         <!-- Heading -->
-        <h2 class="text-xl sm:text-2xl font-bold text-blue-900 mb-6">
+        <h2 class="text-xl sm:text-2xl font-bold text-[#165463] mb-6">
           Powering Growth Through Agrivoltaics
         </h2>
 
         <!-- Description -->
-        <p class="text-gray-700 text-lg leading-relaxed mb-8">
+        <p class="text-[#165463] text-lg leading-relaxed mb-8">
           Our mission is to unlock the potential of land by merging agriculture
           and solar energy. We provide tailored, data-driven solutions that
           benefit landowners, energy customers, and solar contractors alike.
@@ -113,10 +123,10 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Landowners Section -->
           <div class="bg-[#D9D9D94D] p-6 rounded-lg text-center">
-            <h3 class="text-xl font-semibold text-[#184E77] mb-4 uppercase">
+            <h3 class="text-xl font-bold text-[#184E77] mb-4 uppercase">
               Landowners
             </h3>
-            <p class="text-gray-600 mb-6">
+            <p class="text-black mb-6">
               Maximize land value with integrated agriculture and solar
               solutions.
             </p>
@@ -129,10 +139,10 @@
 
           <!-- Energy Customers Section -->
           <div class="bg-[#D9D9D94D] p-6 rounded-lg text-center">
-            <h3 class="text-xl font-semibold text-[#184E77] mb-4 uppercase">
+            <h3 class="text-xl font-bold text-[#184E77] mb-4 uppercase">
               Energy Customers
             </h3>
-            <p class="text-gray-600 mb-6">
+            <p class="text-black mb-6">
               Secure clean, reliable energy while supporting sustainable
               practices.
             </p>
@@ -145,10 +155,10 @@
 
           <!-- Solar Contractors Section -->
           <div class="bg-[#D9D9D94D] p-6 rounded-lg text-center">
-            <h3 class="text-xl font-semibold text-blue-900 mb-4 uppercase">
+            <h3 class="text-xl font-bold text-blue-900 mb-4 uppercase">
               Solar Contractors
             </h3>
-            <p class="text-gray-600 mb-6">
+            <p class="text-black mb-6">
               Connect with optimal sites and stakeholders for solar
               implementation.
             </p>
@@ -183,7 +193,7 @@
     <section class="py-12">
       <div class="container mx-auto px-4">
         <h2
-          class="text-3xl font-bold text-center text-[#165463] mb-12 uppercase"
+          class="text-3xl font-bold text-center text-[#165463] mb-12 "
         >
           Our Process
         </h2>
@@ -281,7 +291,7 @@
           <!-- Ongoing Support -->
           <div class="text-center">
             <!-- Placeholder SVG for Ongoing Support Icon -->
-            <svg
+            <!-- <svg
               class="w-12 h-12 mx-auto mb-4 text-[#165463]"
               fill="none"
               stroke="currentColor"
@@ -294,7 +304,11 @@
                 stroke-width="2"
                 d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
               ></path>
-            </svg>
+            </svg> -->
+            <!-- <img src="./Asset/support-alt-svgrepo-com.svg" class="w-12 h-12 mx-auto mb-4 bg-[#165463] " alt=""> -->
+            <svg class="w-12 h-12 mx-auto mb-4 text-[#165463]" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M12 4.5l-1.5 1.5L3 13.5h3v3h3v-3h3l3-3-1.5-1.5L12 10.5l-1.5-1.5L9 10.5V13H6v-3l6-6zm7.5 4.5L18 7.5 12 13.5l1.5 1.5L15 13.5v3h3v-3h3l-1.5-4.5z" clip-rule="evenodd" />
+          </svg>
             <h3 class="text-xl font-semibold text-[#165463] mb-2">
               Ongoing support
             </h3>
@@ -371,7 +385,7 @@
                 <div class="flex justify-center">
                   <button
                     type="submit"
-                    class="bg-[#C1E34E] text-[#165463] px-6 py-3  hover:bg-[#b0d145] transition text-[16px] font-semibold rounded-[8px]"
+                    class="bg-[#C1E34E] text-[#165463] px-6 py-3  hover:bg-[#b0d145] transition text-[16px] font-semibold rounded-[4px]"
                   >
                     Get in touch
                   </button>
@@ -394,9 +408,9 @@
     
   
     <!-- Footer -->
-    <footer class="bg-white py-8">
+    <footer class="bg-white py-8  md:pt-[100px]">
       <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
           <!-- Left: Logo and Tagline -->
           <div>
             <div class="flex items-center mb-4">
@@ -407,17 +421,17 @@
             </p>
             <!-- Social Media Icons -->
             <div class="flex space-x-4">
-              <a href="#" class="text-[#165463] hover:text-[#0d3c46]">
+              <a href="#" class="text-[#0A66C2] hover:text-[#0d3c46]">
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-1.337-.026-3.063-1.867-3.063-1.872 0-2.159 1.462-2.159 2.971v5.696h-3v-11h2.884v1.509h.041c.402-.764 1.385-1.567 2.855-1.567 3.054 0 3.616 2.008 3.616 4.622v6.436z"/>
                 </svg>
               </a>
-              <a href="#" class="text-[#165463] hover:text-[#0d3c46]">
+              <a href="#" class="text-black hover:text-[#0d3c46]">
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                 </svg>
               </a>
-              <a href="#" class="text-[#165463] hover:text-[#0d3c46]">
+              <a href="#" class="text-[#FF0302] hover:text-[#0d3c46]">
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
                 </svg>
@@ -447,7 +461,7 @@
         </div>
   
         <!-- Bottom Row -->
-        <div class="mt-8 pt-8 border-t border-gray-200">
+        <div class="mt-8 pt-8 ">
           <div class="flex flex-col items-start">
             <!-- Language Selector -->
             <div class="flex items-center mb-4">
@@ -463,7 +477,7 @@
             </div>
   
             <!-- Privacy Links -->
-            <div class="flex flex-wrap space-x-4 mb-2 text-[#2F4858] text-[14px]">
+            <div class="flex flex-wrap space-x-4 mb-2 text-[#2F4858] text-[10px] md:text-[12px]">
               <a href="#" class="hover:underline">Privacy Policy</a>
               <a href="#" class="hover:underline">Terms & Conditions</a>
               <a href="#" class="hover:underline">Code of Conduct</a>
@@ -471,7 +485,7 @@
             </div>
   
             <!-- Copyright -->
-            <p class="text-[#2F4858] text-[14px]">
+            <p class="text-[#2F4858]  text-[10px] md:text-[12px]">
               © 2025 electrofarm.ai, INC. All rights reserved
             </p>
           </div>
