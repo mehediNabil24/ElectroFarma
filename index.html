@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ElectroFarm || Home</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-poppins {
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .font-league {
+    font-family: 'League Spartan', sans-serif;
+  }
+    </style>
   </head>
   <body class="bg-white">
-    <nav class="px-6 py-4 border-b border-gray-200">
+    <nav class="px-[80px] font-poppins py-[45px] border-b border-gray-200">
       <div class="flex flex-wrap items-center justify-between md:justify-start">
         <!-- Logo -->
         <div class="flex items-center space-x-3 mr-14">
-          <img src="./Asset/logo.png" class="lg:h-[80px] h-[40px] w-auto" alt="logo" />
+          <img src="./Asset/logo.png" class="lg:h-[85px] h-[40px] w-auto" alt="logo" />
         </div>
     
         <!-- Mobile toggle -->
@@ -51,7 +63,7 @@
     </nav>
     
     <section
-    class="relative md:min-h-screen h-[700px]  bg-cover bg-center"
+    class=" font-league relative md:min-h-screen h-[700px]  bg-cover bg-center"
     style="background-image: url('./Asset/iStock-2169505125-min.jpg')"
   >
     
@@ -70,13 +82,13 @@
       <div class="mt-6 flex flex-col sm:flex-row gap-4">
         <a
           href="#"
-          class="bg-lime-200 text-blue-900 px-5 py-2 rounded font-semibold hover:bg-lime-300 transition text-center"
+          class="bg-[#D9ED93] text-[#16456A] px-5 py-2 rounded font-bold hover:bg-lime-300 transition text-center"
         >
           Discover our solutions
         </a>
         <a
           href="#"
-          class="bg-lime-200 text-blue-900 px-5 py-2 rounded font-semibold hover:bg-lime-300 transition text-center"
+          class="bg-lime-300 text-[#16456A] px-5 py-2 rounded font-bold hover:bg-[#D9ED93] transition text-center"
         >
           Partner with us
         </a>
@@ -85,15 +97,15 @@
   </section>
   
 
-    <section class="py-16 bg-white text-center px-4">
-      <div class="max-w-2xl text-center mx-auto">
+    <section class="py-16 bg-white text-center px-4 my-[150px]">
+      <div class="max-w-5xl text-center mx-auto">
         <!-- Heading -->
-        <h2 class="text-xl sm:text-2xl font-bold text-[#165463] mb-6">
+        <h2 class="sm:text-[48px] font-league text-2xl  font-bold text-[#165463] mb-6">
           Powering Growth Through Agrivoltaics
         </h2>
 
         <!-- Description -->
-        <p class="text-[#165463] text-lg leading-relaxed mb-8">
+        <p class="text-[#165463] font-poppins text-[24px] leading-relaxed mb-8">
           Our mission is to unlock the potential of land by merging agriculture
           and solar energy. We provide tailored, data-driven solutions that
           benefit landowners, energy customers, and solar contractors alike.
@@ -104,32 +116,32 @@
         <!-- Button -->
         <a
           href="#"
-          class="inline-block bg-lime-200 text-blue-900 px-6 py-2 rounded font-semibold hover:bg-lime-300 transition"
+          class="inline-block bg-lime-200 text-blue-900 px-6 py-2 rounded font-league font-bold hover:bg-lime-300 transition"
         >
           Learn more about our approach
         </a>
       </div>
     </section>
 
-    <section class="py-12">
+    <section class=" px-[80px] my-[150px] font-league">
       <div class="container mx-auto px-4">
         <h2
-          class="text-3xl font-bold text-center text-[#165463] mb-8 uppercase"
+          class="text-[48px]  font-bold text-center text-[#165463] mb-[53px] "
         >
           Tailored Solutions for Every Stakeholder
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Landowners Section -->
           <div class="bg-[#D9D9D94D] p-6 rounded-lg text-center">
-            <h3 class="text-xl font-bold text-[#184E77] mb-4 uppercase">
-              Landowners
+            <h3 class="text-[32px] font-bold text-[#184E77] mb-4 ">
+              landowners
             </h3>
-            <p class="text-black mb-6">
+            <p class="text-black mb-6 text-[18px]">
               Maximize land value with integrated agriculture and solar
               solutions.
             </p>
             <button
-              class="bg-[#B5E48C] text-black px-4 py-2 hover:bg-lime-300 transition"
+              class="bg-[#B5E48C] font-bold text-[#123A59] px-4 py-2 rounded hover:bg-lime-300 transition"
             >
               See How It Works
             </button>
@@ -137,15 +149,15 @@
 
           <!-- Energy Customers Section -->
           <div class="bg-[#D9D9D94D] p-6 rounded-lg text-center">
-            <h3 class="text-xl font-bold text-[#184E77] mb-4 uppercase">
-              Energy Customers
+            <h3 class="text-[32px] font-bold text-[#184E77] mb-4 ">
+              energy customers
             </h3>
-            <p class="text-black mb-6">
+            <p class="text-black mb-6 text-[18px] ">
               Secure clean, reliable energy while supporting sustainable
               practices.
             </p>
             <button
-              class="bg-[#B5E48C] text-black px-4 py-2 hover:bg-lime-300 transition"
+              class="bg-[#B5E48C] text-[#123A59] font-bold rounded px-4 py-2 hover:bg-lime-300 rounded transition"
             >
               Explore Energy Options
             </button>
@@ -153,15 +165,15 @@
 
           <!-- Solar Contractors Section -->
           <div class="bg-[#D9D9D94D] p-6 rounded-lg text-center">
-            <h3 class="text-xl font-bold text-blue-900 mb-4 uppercase">
-              Solar Contractors
+            <h3 class="text-[32px] font-bold text-blue-900 mb-4 ">
+              solar contractors
             </h3>
-            <p class="text-black mb-6">
+            <p class="text-black mb-6 text-[18px]">
               Connect with optimal sites and stakeholders for solar
               implementation.
             </p>
             <button
-              class="bg-[#B5E48C] text-black px-4 py-2 hover:bg-lime-300 transition"
+              class="bg-[#B5E48C] text-[#123A59] font-bold px-4 py-2 hover:bg-lime-300 transition"
             >
               Partner With Us
             </button>
@@ -170,7 +182,7 @@
       </div>
     </section>
 
-    <section class="relative py-20 h-[850px] flex items-center justify-center">
+    <section class="relative py-20 h-[850px] flex items-center justify-center my-[150px] font-league">
       <!-- Background Image -->
       <div
         class="absolute inset-0 bg-cover bg-center"
@@ -181,17 +193,17 @@
       <!-- Content -->
       <div class="relative container mx-auto px-4 text-center">
         <h1
-          class="text-4xl md:text-5xl bg-white font-bold text-[#165463] uppercase inline-block px-4 py-2"
+          class="text-4xl md:text-5xl bg-white font-bold text-[#165463] uppercase inline-block px-[50px] py-[20px] rounded font-league "
         >
           Bringing Agriculture and Solar Together
         </h1>
       </div>
     </section>
 
-    <section class="py-12">
+    <section class="px-[80px] font-league my-[150px]">
       <div class="container mx-auto px-4">
         <h2
-          class="text-3xl font-bold text-center text-[#165463] mb-12 "
+          class="text-[48px] font-bold text-center text-[#165463] mb-12 "
         >
           Our Process
         </h2>
@@ -199,24 +211,12 @@
           <!-- Data Collection -->
           <div class="text-center">
             <!-- Placeholder SVG for Data Collection Icon -->
-            <svg
-              class="w-12 h-12 mx-auto mb-4 text-[#165463]"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              ></path>
-            </svg>
-            <h3 class="text-xl font-semibold text-[#165463] mb-2">
+          
+            <img src="./Asset/Vector.svg"  class="w-[90px] h-[90px] mx-auto mb-4 text-[#165463]" alt="">
+            <h3 class="text-[24px] font-semibold text-[#165463] mb-2">
               Data collection
             </h3>
-            <p class="text-[#165463]">
+            <p class="text-[#165463] text-[18px]">
               Conduct drone surveys and geospatial analysis to assess land
               suitability.
             </p>
@@ -225,30 +225,11 @@
           <!-- Business Planning -->
           <div class="text-center">
             <!-- Placeholder SVG for Business Planning Icon -->
-            <svg
-              class="w-12 h-12 mx-auto mb-4 text-[#165463]"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 6h18M3 12h18M3 18h18"
-              ></path>
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 6v12"
-              ></path>
-            </svg>
-            <h3 class="text-xl font-semibold text-[#165463] mb-2">
+            <img src="./Asset/solar_power_24dp_000000_FILL0_wght100_GRAD0_opsz24 1.svg"  class="w-[90px] h-[90px] mx-auto mb-4 text-[#165463]" alt="">
+            <h3 class="text-[24px] font-semibold text-[#165463] mb-2">
               Business planning
             </h3>
-            <p class="text-[#165463]">
+            <p class="text-[#165463] text-[18px]">
               Develop tailored business cases that combine agriculture and solar
               tech.
             </p>
@@ -257,30 +238,11 @@
           <!-- Partner Matching -->
           <div class="text-center">
             <!-- Placeholder SVG for Partner Matching Icon -->
-            <svg
-              class="w-12 h-12 mx-auto mb-4 text-[#165463]"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 2a10 10 0 00-3.16 19.5A10 10 0 0012 2z"
-              ></path>
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 2a10 10 0 013.16 19.5A10 10 0 0112 2z"
-              ></path>
-            </svg>
-            <h3 class="text-xl font-semibold text-[#165463] mb-2">
+            <img src="./Asset/matching.svg"  class="w-[90px] h-[90px] mx-auto mb-4 text-[#165463]" alt="">
+            <h3 class="text-[24px] font-semibold text-[#165463] mb-2">
               Partner matching
             </h3>
-            <p class="text-[#165463]">
+            <p class="text-[#165463] text-[18px]">
               Connect stakeholders with contractors, energy buyers, and
               financial institutions.
             </p>
@@ -289,28 +251,11 @@
           <!-- Ongoing Support -->
           <div class="text-center">
             <!-- Placeholder SVG for Ongoing Support Icon -->
-            <!-- <svg
-              class="w-12 h-12 mx-auto mb-4 text-[#165463]"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
-              ></path>
-            </svg> -->
-            <!-- <img src="./Asset/support-alt-svgrepo-com.svg" class="w-12 h-12 mx-auto mb-4 bg-[#165463] " alt=""> -->
-            <svg class="w-12 h-12 mx-auto mb-4 text-[#165463]" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M12 4.5l-1.5 1.5L3 13.5h3v3h3v-3h3l3-3-1.5-1.5L12 10.5l-1.5-1.5L9 10.5V13H6v-3l6-6zm7.5 4.5L18 7.5 12 13.5l1.5 1.5L15 13.5v3h3v-3h3l-1.5-4.5z" clip-rule="evenodd" />
-          </svg>
-            <h3 class="text-xl font-semibold text-[#165463] mb-2">
+            <img src="./Asset/support.svg"  class="w-[90px] h-[90px] mx-auto mb-4 text-[#165463]" alt="">
+            <h3 class="text-[24px] font-semibold text-[#165463] mb-2">
               Ongoing support
             </h3>
-            <p class="text-[#165463]">
+            <p class="text-[#165463] text-[18px]">
               Monitor performance and collect feedback to continuously improve
               results.
             </p>
@@ -319,7 +264,7 @@
         <!-- Button -->
         <div class="text-center">
           <button
-            class="bg-[#D9ED93] text-[#16456A] px-6 py-3 font-semibold  hover:bg-lime-300 transition"
+            class="bg-[#D9ED93] font-bold rounded px-[32px] text-[#16456A]  py-3  hover:bg-lime-300 transition"
           >
             Start your journey
           </button>
@@ -328,12 +273,12 @@
     </section>
 
     
-    <section class="py-12">
+    <section class="px-[80px] my-[150px] font-league">
         <div class="container mx-auto px-4">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
             <!-- Left Column: Form -->
             <div class="bg-white p-10 flex flex-col justify-center">
-              <h2 class="text-[32px] font-bold text-[#165463] mb-8">
+              <h2 class="text-[48px] font-bold text-[#165463] mb-8">
                 Contact & Consultation
               </h2>
               <form class="space-y-14 w-full mx-auto">
@@ -346,7 +291,7 @@
                   </label>
                   <input
                     type="text"
-                    class="w-full p-4 pt-5 border border-[#D1D5DB] rounded-[8px] focus:outline-none focus:border-[#165463] focus:ring-2 focus:ring-[#165463] text-[#6B7280] text-[16px] font-normal"
+                    class="w-full p-4 pt-5 border border-[#D1D5DB] rounded-[8px] focus:outline-none focus:border-[#C1E34E] focus:ring-1 focus:ring-[#C1E34E] text-[#6B7280] text-[16px] font-normal"
                   />
                 </div>
   
@@ -359,7 +304,7 @@
                   </label>
                   <input
                     type="email"
-                    class="w-full p-4 pt-5 border border-[#D1D5DB] rounded-[8px] focus:outline-none focus:border-[#165463] focus:ring-2 focus:ring-[#165463] text-[#6B7280] text-[16px] font-normal"
+                    class="w-full p-4 pt-5 border border-[#D1D5DB] rounded-[8px] focus:outline-none focus:border-[#C1E34E] focus:ring-1 focus:ring-[#C1E34E] text-[#6B7280] text-[16px] font-normal"
                   />
                 </div>
   
@@ -371,7 +316,7 @@
                     What do you want to do?
                   </label>
                   <select
-                    class="w-full p-4 pt-5 border border-[#D1D5DB] rounded-[8px] focus:outline-none focus:border-[#165463] focus:ring-2 focus:ring-[#165463] text-[#6B7280] text-[16px] font-normal appearance-none bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZXZybi1kb3duIj48cGF0aCBkPSJtNyA3IDUgNSA1LTUiLz48L3N2Zz4=')] bg-no-repeat bg-[right_1rem_center] bg-[length:16px_16px]"
+                    class="w-full p-4 pt-5 border border-[#D1D5DB] rounded-[8px] focus:outline-none focus:border-[#C1E34E] focus:ring-1 focus:ring-[#C1E34E] text-[#6B7280] text-[16px] font-normal appearance-none bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZXZybi1kb3duIj48cGF0aCBkPSJtNyA3IDUgNSA1LTUiLz48L3N2Zz4=')] bg-no-repeat bg-[right_1rem_center] bg-[length:16px_16px]"
                   >
                     <option value="" disabled selected></option>
                     <option value="option1">Option 1</option>
@@ -383,7 +328,7 @@
                 <div class="flex justify-center">
                   <button
                     type="submit"
-                    class="bg-[#C1E34E] text-[#165463] px-6 py-3  hover:bg-[#b0d145] transition text-[16px] font-semibold rounded-[4px]"
+                    class="bg-[#C1E34E] text-[#165463] px-10 py-3  hover:bg-[#b0d145] transition text-[16px] font-bold rounded-[5px]"
                   >
                     Get in touch
                   </button>
@@ -406,84 +351,76 @@
     
   
     <!-- Footer -->
-    <footer class="bg-white py-8  md:pt-[100px]">
+    <footer class="bg-white  font-poppins px-[80px]">
       <div class="container mx-auto px-4">
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
-          <!-- Left: Logo and Tagline -->
-          <div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-x-12 md:gap-x-8">
+          <!-- Left: Logo and Tagline (Span 2 columns) -->
+          <div class="md:col-span-2 mb-6 md:mb-0">
             <div class="flex items-center mb-4">
-              <img src="./Asset//logo.png"  alt="" class="h-8 w-auto" />
+              <img src="./Asset/logo.png" alt="" class="h-[68px] w-auto" />
             </div>
             <p class="text-black text-[16px] mb-4">
               Powering growth through agrivoltaics
             </p>
             <!-- Social Media Icons -->
             <div class="flex space-x-4">
-              <a href="#" class="text-[#0A66C2] hover:text-[#0d3c46]">
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-1.337-.026-3.063-1.867-3.063-1.872 0-2.159 1.462-2.159 2.971v5.696h-3v-11h2.884v1.509h.041c.402-.764 1.385-1.567 2.855-1.567 3.054 0 3.616 2.008 3.616 4.622v6.436z"/>
-                </svg>
-              </a>
-              <a href="#" class="text-black hover:text-[#0d3c46]">
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                </svg>
-              </a>
-              <a href="#" class="text-[#FF0302] hover:text-[#0d3c46]">
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-                </svg>
-              </a>
+              <!-- Add your icons here -->
             </div>
           </div>
-  
+        
           <!-- Middle: Solutions -->
           <div>
-            <h3 class="text-[16px] font-semibold text-[#2F4858] mb-4">Solutions</h3>
-            <ul class="space-y-2 text-[#3B5566] text-[14px]">
+            <h3 class="text-[24px] font-semibold text-[#2F4858] mb-4">Solutions</h3>
+            <ul class="space-y-2 text-[#3B5566] text-[16px]">
               <li><a href="#" class="hover:underline">For landowners</a></li>
               <li><a href="#" class="hover:underline">For solar contractors</a></li>
               <li><a href="#" class="hover:underline">For energy customers</a></li>
             </ul>
           </div>
-  
+        
           <!-- Right: Company -->
           <div>
-            <h3 class="text-[16px] font-semibold text-[#2F4858] mb-4">Company</h3>
-            <ul class="space-y-2 text-[#3B5566] text-[14px]">
+            <h3 class="text-[24px] font-semibold text-[#2F4858] mb-4">Company</h3>
+            <ul class="space-y-2 text-[#3B5566] text-[16px]">
               <li><a href="#" class="hover:underline">Contact us</a></li>
               <li><a href="#" class="hover:underline">Book a consultation</a></li>
               <li><a href="#" class="hover:underline">About us</a></li>
             </ul>
           </div>
         </div>
+        
   
         <!-- Bottom Row -->
-        <div class="mt-8 pt-8 ">
+        <div class="mt-[70px] pt-8  ">
           <div class="flex flex-col items-start">
             <!-- Language Selector -->
             <div class="flex items-center mb-4">
+              <div class="flex items-center gap-2">
+              <div>
+                <img src="./Asset/world.svg" alt="">
+              </div>
               <div class="relative">
                 <select
-                  class="border border-gray-300 rounded-[8px] p-2 pr-8 text-[#2F4858] text-[14px] appearance-none bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZXZybi1kb3duIj48cGF0aCBkPSJtNyA3IDUgNSA1LTUiLz48L3N2Zz4=')] bg-no-repeat bg-[right_0.5rem_center] bg-[length:16px_16px]"
+                  class="border border-gray-300 rounded-[8px] p-2 pr-8 text-[#2F4858] text-[16px] appearance-none bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZXZybi1kb3duIj48cGF0aCBkPSJtNyA3IDUgNSA1LTUiLz48L3N2Zz4=')] bg-no-repeat bg-[right_0.5rem_center] bg-[length:16px_16px]"
                 >
                   <option value="en">EN</option>
                   <option value="es">ES</option>
                   <option value="fr">FR</option>
                 </select>
               </div>
+              </div>
             </div>
   
             <!-- Privacy Links -->
-            <div class="flex flex-wrap space-x-4 mb-2 text-[#2F4858] text-[10px] md:text-[12px]">
-              <a href="#" class="hover:underline">Privacy Policy</a>
-              <a href="#" class="hover:underline">Terms & Conditions</a>
-              <a href="#" class="hover:underline">Code of Conduct</a>
-              <a href="#" class="hover:underline">Sitemap</a>
+            <div class="flex flex-wrap divide-x divide-[#2F4858]  mb-2 text-[#4A667A] text-[10px] md:text-[16px]">
+              <a href="#" class="hover:underline px-2">Privacy Policy</a>
+              <a href="#" class="hover:underline px-2">Terms & Conditions</a>
+              <a href="#" class="hover:underline px-2">Code of Conduct</a>
+              <a href="#" class="hover:underline px-2">Sitemap</a>
             </div>
   
             <!-- Copyright -->
-            <p class="text-[#2F4858]  text-[10px] md:text-[12px]">
+            <p class="text-[#2F4858]  text-[10px] md:text-[14px]">
               © 2025 electrofarm.ai, INC. All rights reserved
             </p>
           </div>
