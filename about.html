@@ -17,107 +17,107 @@
 </head>
 <body>
   <nav
-      class="xl:px-[80px] lg:px-[20px] px-[10px] font-poppins lg:py-[45px] py-[30px] "
-    >
-      <div class="flex flex-wrap items-center justify-between md:justify-start">
-        <!-- Logo -->
-        <div class="flex items-center space-x-3 lg:mr-20 mr-4">
-          <img
-            src="./Asset/logo.png"
-            class="xl:h-[75px] h-[40px] w-auto"
-            alt="logo"
-          />
-        </div>
+  class="xl:px-[80px] lg:px-[20px] px-[10px] font-poppins lg:py-[45px] py-[30px] "
+>
+  <div class="flex flex-wrap items-center justify-between md:justify-start">
+    <!-- Logo -->
+    <div class="flex items-center space-x-3 lg:mr-20 mr-4">
+      <img
+        src="./Asset/logo.png"
+        class="xl:h-[75px] h-[40px] w-auto"
+        alt="logo"
+      />
+    </div>
 
-        <!-- Mobile toggle (unchanged) -->
-        <details class="md:hidden relative">
-          <summary class="list-none cursor-pointer">
-            <svg
-              class="w-6 h-6 text-blue-900"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
+    <!-- Mobile toggle (unchanged) -->
+    <details class="md:hidden relative">
+      <summary class="list-none cursor-pointer">
+        <svg
+          class="w-6 h-6 text-blue-900"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </summary>
+      <div
+        class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg flex flex-col space-y-2 p-4 z-50"
+      >
+        <details class="w-full">
+          <summary class="cursor-pointer hover:text-green-600">
+            Services
           </summary>
           <div
-            class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg flex flex-col space-y-2 p-4 z-50"
+            class="ml-4 mt-2 flex flex-col space-y-1 text-sm text-[#184E77]"
           >
-            <details class="w-full">
-              <summary class="cursor-pointer hover:text-green-600">
-                Services
-              </summary>
-              <div
-                class="ml-4 mt-2 flex flex-col space-y-1 text-sm text-[#184E77]"
-              >
-                <a href="landowners.html" class="hover:text-green-600">Land Owners</a>
-                <a href="#" class="hover:text-green-600">Option 2</a>
-                <a href="#" class="hover:text-green-600">Option 3</a>
-              </div>
-            </details>
-            <a href="about.html" class="hover:text-green-600">About us</a>
-            <a href="#" class="hover:text-green-600">Resources</a>
-            <a href="#" class="hover:text-green-600">Contact us</a>
+            <a href="landowners.html" class="hover:text-green-600">Land Owners</a>
+            <a href="#" class="hover:text-green-600">Option 2</a>
+            <a href="#" class="hover:text-green-600">Option 3</a>
           </div>
         </details>
+        <a href="about.html" class="hover:text-green-600">About us</a>
+        <a href="#" class="hover:text-green-600">Resources</a>
+        <a href="#" class="hover:text-green-600">Contact us</a>
+      </div>
+    </details>
 
-        <!-- Desktop Menu -->
+    <!-- Desktop Menu -->
+    <div
+      class="hidden md:flex flex-wrap xl:space-x-[180px] lg:space-x-[50px] space-x-[20px] text-[18px] font-medium text-[#184E77]"
+    >
+      <div class="relative group cursor-pointer">
         <div
-          class="hidden md:flex flex-wrap lg:space-x-[50px] space-x-[20px] text-[18px] font-medium text-[#184E77]"
+          class="flex items-center space-x-1 hover:text-green-600 focus:outline-none"
+          tabindex="0"
         >
-          <div class="relative group cursor-pointer">
-            <div
-              class="flex items-center space-x-1 hover:text-green-600 focus:outline-none"
-              tabindex="0"
-            >
-              <span>Services</span>
-              <svg
-                class="w-4 h-4 transform transition duration-300 group-hover:rotate-180"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </div>
-            <!-- Dropdown -->
-            <div
-              class="absolute top-full left-0 mt-1 hidden group-hover:flex group-focus-within:flex flex-col bg-white border border-gray-200 rounded-md shadow-md z-50 w-48 opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-within:opacity-100"
-            >
-              <a
-                href="landowners.html"
-                class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
-                >Land Owners</a
-              >
-              <a
-                href="#"
-                class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
-                >Option 2</a
-              >
-              <a
-                href="#"
-                class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
-                >Option 3</a
-              >
-            </div>
-          </div>
-          <a href="about.html" class="hover:text-green-600">About us</a>
-          <a href="#" class="hover:text-green-600">Resources</a>
-          <a href="#" class="hover:text-green-600">Contact us</a>
+          <span>Services</span>
+          <svg
+            class="w-4 h-4 transform transition duration-300 group-hover:rotate-180"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </div>
+        <!-- Dropdown -->
+        <div
+          class="absolute top-full left-0 mt-1 hidden group-hover:flex group-focus-within:flex flex-col bg-white border border-gray-200 rounded-md shadow-md z-50 w-48 opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-within:opacity-100"
+        >
+          <a
+            href="landowners.html"
+            class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
+            >Land Owners</a
+          >
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
+            >Option 2</a
+          >
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
+            >Option 3</a
+          >
         </div>
       </div>
-    </nav>
+      <a href="about.html" class="hover:text-green-600">About us</a>
+      <a href="#" class="hover:text-green-600">Resources</a>
+      <a href="#" class="hover:text-green-600">Contact us</a>
+    </div>
+  </div>
+</nav>
 
       <section class="relative w-full h-[800px] bg-cover bg-center font-poppins" style="background-image: url('./Asset/iStock-1848471040-min.jpg')">
         <!-- <div class="absolute inset-0 bg-black bg-opacity-30"></div> -->
