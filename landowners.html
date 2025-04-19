@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .font-poppins {
+      font-family: "Poppins", sans-serif;
+    }
+
+    .font-league {
+      font-family: "League Spartan", sans-serif;
+    }
+  </style>
+</head>
+<body>
+    <nav
+    class="xl:px-[80px] lg:px-[20px] px-[10px] font-poppins lg:py-[45px] py-[30px] "
+  >
+    <div class="flex flex-wrap items-center justify-between md:justify-start">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3 lg:mr-20 mr-4">
+        <img
+          src="./Asset/logo.png"
+          class="xl:h-[75px] h-[40px] w-auto"
+          alt="logo"
+        />
+      </div>
+
+      <!-- Mobile toggle (unchanged) -->
+      <details class="md:hidden relative">
+        <summary class="list-none cursor-pointer">
+          <svg
+            class="w-6 h-6 text-blue-900"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </summary>
+        <div
+          class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg flex flex-col space-y-2 p-4 z-50"
+        >
+          <details class="w-full">
+            <summary class="cursor-pointer hover:text-green-600">
+              Services
+            </summary>
+            <div
+              class="ml-4 mt-2 flex flex-col space-y-1 text-sm text-[#184E77]"
+            >
+              <a href="landowners.html" class="hover:text-green-600">Land Owners</a>
+              <a href="#" class="hover:text-green-600">Option 2</a>
+              <a href="#" class="hover:text-green-600">Option 3</a>
+            </div>
+          </details>
+          <a href="about.html" class="hover:text-green-600">About us</a>
+          <a href="#" class="hover:text-green-600">Resources</a>
+          <a href="#" class="hover:text-green-600">Contact us</a>
+        </div>
+      </details>
+
+      <!-- Desktop Menu -->
+      <div
+        class="hidden md:flex flex-wrap lg:space-x-[50px] space-x-[20px] text-[18px] font-medium text-[#184E77]"
+      >
+        <div class="relative group cursor-pointer">
+          <div
+            class="flex items-center space-x-1 hover:text-green-600 focus:outline-none"
+            tabindex="0"
+          >
+            <span>Services</span>
+            <svg
+              class="w-4 h-4 transform transition duration-300 group-hover:rotate-180"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
+          <!-- Dropdown -->
+          <div
+            class="absolute top-full left-0 mt-1 hidden group-hover:flex group-focus-within:flex flex-col bg-white border border-gray-200 rounded-md shadow-md z-50 w-48 opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-within:opacity-100"
+          >
+            <a
+              href="landowners.html"
+              class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
+              >Land Owners</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
+              >Option 2</a
+            >
+            <a
+              href="#"
+              class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
+              >Option 3</a
+            >
+          </div>
+        </div>
+        <a href="about.html" class="hover:text-green-600">About us</a>
+        <a href="#" class="hover:text-green-600">Resources</a>
+        <a href="#" class="hover:text-green-600">Contact us</a>
+      </div>
+    </div>
+  </nav>
+
+    <section class="bg-white">
+        <div class="xl:px-[80px] lg:px-[20px] px-[10px] md:mb-[150px] mb-[50px] px-[20px] flex flex-col md:flex-row items-stretch">
+          <!-- Image Section -->
+          <div class="md:w-1/2">
+            <img
+              src="./Asset/iStock-1129550046-min.jpg"
+              alt="Aerial view of solar panels"
+              class="w-full h-full object-cover"
+            />
+          </div>
+      
+          <!-- Text Section -->
+          <div class="md:w-1/2 flex flex-col justify-center items-center p-8 lg:p-12">
+            <!-- Heading -->
+            <h2 class="text-2xl font-league xl:text-[48px] lg:text-[32px] text-center font-bold text-[#165463] max-w-lg leading-tight">
+              Unlock new revenue opportunities through agricultural and solar integration.
+            </h2>
+      
+            <!-- Button -->
+            <button class="mt-6 bg-[#D9ED93] hover:bg-lime-300 text-[#16456A] font-bold text-base py-3 px-6 rounded">
+              Maximize my land's potential
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="xl:px-[80px] lg:px-[20px] px-[10px] font-league md:my-[150px] my-[60px]">
+        <div class="">
+          <h2
+            class="xl:text-[48px] lg:[38px] text-[32px] font-bold text-center text-[#165463] mb-12"
+          >
+          Our Services for Landowners
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 lg:gap-[100px] gap-[50px]  mb-12">
+            <!-- Data Collection -->
+            <div class="text-center">
+              <!-- Placeholder SVG for Data Collection Icon -->
+  
+              <img
+                src="./Asset/Vector.svg"
+                class="w-[90px] h-[90px] mx-auto mb-4 text-[#165463]"
+                alt=""
+              />
+              <h3 class="text-[24px] font-semibold text-[#165463] mb-2">
+                Research
+              </h3>
+              <p class="text-black text-[18px] mb-2">
+                Multi-spectral drone missions.
+              </p>
+              <p class="text-black text-[18px] mb-2">
+                Geospatial and agricultural analysis.
+              </p>
+              <p class="text-black text-[18px]">
+                Tailored business cases for optimizing
+               
+              </p>
+            </div>
+  
+           
+  
+            <!-- Partner Matching -->
+            <div class="text-center">
+              <!-- Placeholder SVG for Partner Matching Icon -->
+              <img
+                src="./Asset/matching.svg"
+                class="w-[90px] h-[90px] mx-auto mb-4 text-[#165463]"
+                alt=""
+              />
+              <h3 class="text-[24px] font-semibold text-[#165463] mb-2">
+                 Match
+              </h3>
+              <p class="text-black text-[18px] mb-2">
+                Identifying the right solar contractors and financial partners
+              </p>
+              <p class="text-black text-[18px] mb-2">
+                Creating turn-key business plans for optimal revenue
+              </p>
+            
+            </div>
+  
+            <!-- Ongoing Support -->
+            <div class="text-center">
+              <!-- Placeholder SVG for Ongoing Support Icon -->
+              <img
+                src="./Asset/support.svg"
+                class="w-[90px] h-[90px] mx-auto mb-4 text-[#165463]"
+                alt=""
+              />
+              <h3 class="text-[24px] font-semibold text-[#165463] mb-2">
+                Optimise
+              </h3>
+              <p class="text-black text-[18px] mb-2">
+                Ongoing drone surveys to monitor solar efficiency and crop health.
+              </p>
+              <p class="text-black text-[18px] mb-2">
+                Feedback collection to enhance profitability.
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <section class="xl:px-[80px] lg:px-[20px] px-[10px] md:my-[150px] my-[50px] font-league">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+            <!-- Left Column: Form -->
+            <div class="bg-white p-10 flex flex-col justify-center">
+              <h2
+                class="lg:text-[48px] text-[32px] font-bold text-[#165463] mb-8"
+              >
+                Contact & Consultation
+              </h2>
+              <form class="md:space-y-[70px] space-y-10 w-full mx-auto">
+                <!-- Name Field -->
+                <div class="relative group">
+                  <label
+                    class="absolute -top-2 left-4 px-1 bg-white text-[#6B7280] text-[14px] font-normal group-focus-within:text-[#165463]"
+                  >
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    class="w-full p-4 pt-5 border border-[#D1D5DB] rounded-[8px] focus:outline-none focus:border-[#C1E34E] focus:ring-1 focus:ring-[#C1E34E] text-[#6B7280] text-[16px] font-normal"
+                  />
+                </div>
+  
+                <!-- Email Field -->
+                <div class="relative group">
+                  <label
+                    class="absolute -top-2 left-4 px-1 bg-white text-[#6B7280] text-[14px] font-normal group-focus-within:text-[#165463]"
+                  >
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    class="w-full p-4 pt-5 border border-[#D1D5DB] rounded-[8px] focus:outline-none focus:border-[#C1E34E] focus:ring-1 focus:ring-[#C1E34E] text-[#6B7280] text-[16px] font-normal"
+                  />
+                </div>
+  
+               
+  
+                <!-- Submit Button -->
+                <div class="flex justify-center">
+                  <button
+                    type="submit"
+                    class="bg-[#C1E34E] text-[#165463] px-10 py-3 hover:bg-[#b0d145] transition text-[16px] font-bold rounded-[5px]"
+                  >
+                  Request a consultation
+                  </button>
+                </div>
+              </form>
+            </div>
+  
+            <!-- Right Column: Image -->
+  
+            <div class="bg-cover bg-center">
+              <img
+                src="./Asset/iStock-1330612804-min.jpg"
+                alt="Solar Panels"
+                class="w-full md:h-[700px] h-[400px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-white font-poppins xl:px-[80px] lg:px-[20px] px-[10px]">
+        <div class="container mx-auto px-4">
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 gap-x-12 md:gap-x-8 items-start"
+          >
+            <!-- Left: Logo and Tagline (Span 2 columns) -->
+            <div class="md:col-span-2 mb-6 md:mb-0 self-start">
+              <div class="flex items-center mb-4">
+                <img
+                  src="./Asset/logo.png"
+                  alt=""
+                  class="lg:h-[68px] h-[48px] w-auto"
+                />
+              </div>
+              <p class="text-black text-[16px] mb-4">
+                Powering growth through agrivoltaics
+              </p>
+              <!-- Social Media Icons -->
+  
+              <!-- Social Media Icons -->
+              <div class="flex space-x-4">
+                <a href="#" class="text-[#0A66C2] hover:text-[#0d3c46]">
+                  <svg
+                    class="w-8 h-8"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-1.337-.026-3.063-1.867-3.063-1.872 0-2.159 1.462-2.159 2.971v5.696h-3v-11h2.884v1.509h.041c.402-.764 1.385-1.567 2.855-1.567 3.054 0 3.616 2.008 3.616 4.622v6.436z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="text-black hover:text-[#0d3c46]">
+                  <svg
+                    class="w-8 h-8"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="text-[#FF0302] hover:text-[#0d3c46]">
+                  <svg
+                    class="w-8 h-8"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+  
+            <!-- Middle: Solutions -->
+            <div class="self-start">
+              <h3
+                class="lg:text-[24px] text-[20px] font-semibold text-[#2F4858] mb-4"
+              >
+                Solutions
+              </h3>
+              <ul class="space-y-2 text-[#3B5566] text-[16px]">
+                <li><a href="#" class="hover:underline">For landowners</a></li>
+                <li>
+                  <a href="#" class="hover:underline">For solar contractors</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline">For energy customers</a>
+                </li>
+              </ul>
+            </div>
+  
+            <!-- Right: Company -->
+            <div class="self-start">
+              <h3
+                class="lg:text-[24px] text-[20px] font-semibold text-[#2F4858] mb-4"
+              >
+                Company
+              </h3>
+              <ul class="space-y-2 text-[#3B5566] text-[16px]">
+                <li><a href="#" class="hover:underline">Contact us</a></li>
+                <li>
+                  <a href="#" class="hover:underline">Book a consultation</a>
+                </li>
+                <li><a href="#" class="hover:underline">About us</a></li>
+              </ul>
+            </div>
+          </div>
+  
+          <!-- Bottom Row -->
+          <div class="mt-[30px] pt-8">
+            <div class="flex flex-col items-start">
+              <!-- Language Selector -->
+              <div class="flex items-center mb-4">
+                <div class="flex items-center gap-2">
+                  <div>
+                    <img src="./Asset/world.svg" alt="" />
+                  </div>
+                  <div class="relative">
+                    <select
+                      class="border border-gray-300 rounded-[8px] p-2 pr-8 text-[#2F4858] text-[16px] appearance-none bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZXZybi1kb3duIj48cGF0aCBkPSJtNyA3IDUgNSA1LTUiLz48L3N2Zz4=')] bg-no-repeat bg-[right_0.5rem_center] bg-[length:16px_16px]"
+                    >
+                      <option value="en">EN</option>
+                      <option value="es">ES</option>
+                      <option value="fr">FR</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+  
+              <!-- Privacy Links -->
+              <div
+                class="flex flex-wrap divide-x divide-[#2F4858] mb-2 text-[#4A667A] text-[9px] md:text-[16px]"
+              >
+                <a href="#" class="hover:underline sm:px-2 px-1">Privacy Policy</a>
+                <a href="#" class="hover:underline sm:px-2 px-1">Terms & Conditions</a>
+                <a href="#" class="hover:underline sm:px-2 px-1">Code of Conduct</a>
+                <a href="#" class="hover:underline sm:px-2 px-1">Sitemap</a>
+              </div>
+  
+              <!-- Copyright -->
+              <p class="text-[#2F4858] text-[10px] md:text-[14px]">
+                © 2025 electrofarm.ai, INC. All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+</body>
+</html>
