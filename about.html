@@ -17,107 +17,109 @@
 </head>
 <body>
   <nav
-  class="xl:px-[80px] lg:px-[20px] px-[10px] font-poppins lg:py-[45px] py-[30px] "
->
-  <div class="flex flex-wrap items-center justify-between md:justify-start">
-    <!-- Logo -->
-    <div class="flex items-center space-x-3 lg:mr-20 mr-4">
-      <img
-        src="./Asset/logo.png"
-        class="xl:h-[75px] h-[40px] w-auto"
-        alt="logo"
-      />
-    </div>
-
-    <!-- Mobile toggle (unchanged) -->
-    <details class="md:hidden relative">
-      <summary class="list-none cursor-pointer">
-        <svg
-          class="w-6 h-6 text-blue-900"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
+      class="xl:px-[80px] lg:px-[20px] px-[10px] font-poppins lg:py-[45px] py-[30px] "
+    >
+      <div class="flex flex-wrap items-center justify-between md:justify-start">
+        <!-- Logo -->
+        <div class="flex items-center space-x-3 lg:mr-20 mr-4">
+          <img
+            src="./Asset/logo.png"
+            class="xl:h-[75px] h-[40px] w-auto"
+            alt="logo"
           />
-        </svg>
-      </summary>
-      <div
-        class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg flex flex-col space-y-2 p-4 z-50"
-      >
-        <details class="w-full">
-          <summary class="cursor-pointer hover:text-green-600">
-            Services
+        </div>
+
+        <!-- Mobile toggle (unchanged) -->
+        <details class="md:hidden relative">
+          <summary class="list-none cursor-pointer">
+            <svg
+              class="w-6 h-6 text-blue-900"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
           </summary>
           <div
-            class="ml-4 mt-2 flex flex-col space-y-1 text-sm text-[#184E77]"
+            class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg flex flex-col space-y-2 p-4 z-50"
           >
-            <a href="landowners.html" class="hover:text-green-600">Land Owners</a>
-            <a href="#" class="hover:text-green-600">Option 2</a>
-            <a href="#" class="hover:text-green-600">Option 3</a>
+            <details class="w-full">
+              <summary class="cursor-pointer hover:text-green-600">
+                Services
+              </summary>
+              <div
+                class="ml-4 mt-2 flex flex-col space-y-1 text-sm text-[#184E77]"
+              >
+                <a href="landowners.html" class="hover:text-green-600">Land Owners</a>
+                <a href="solar.html" class="hover:text-green-600">Solar Contractors</a>
+                <a href="#" class="hover:text-green-600">Option 3</a>
+              </div>
+            </details>
+            <a href="about.html" class="hover:text-green-600">About us</a>
+            <a href="#" class="hover:text-green-600">Resources</a>
+            <a href="#contact-us" class="hover:text-green-600">Contact us</a>
           </div>
         </details>
-        <a href="about.html" class="hover:text-green-600">About us</a>
-        <a href="#" class="hover:text-green-600">Resources</a>
-        <a href="#" class="hover:text-green-600">Contact us</a>
-      </div>
-    </details>
 
-    <!-- Desktop Menu -->
-    <div
-      class="hidden md:flex flex-wrap xl:space-x-[180px] lg:space-x-[50px] space-x-[20px] text-[18px] font-medium text-[#184E77]"
+        <!-- Desktop Menu -->
+        <div
+          class="hidden md:flex flex-wrap xl:space-x-[180px] lg:space-x-[50px] space-x-[20px] text-[18px] font-medium text-[#184E77]"
+        >
+         <!-- Services Button Dropdown (click-to-open, no JS) -->
+<details class="relative group">
+  <summary
+    class="flex items-center space-x-1 cursor-pointer list-none text-[#184E77] hover:text-green-600 text-[18px]"
+  >
+    <span>Services</span>
+    <svg
+      class="w-4 h-4 ml-1 transition-transform duration-300 group-open:rotate-180"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
     >
-      <div class="relative group cursor-pointer">
-        <div
-          class="flex items-center space-x-1 hover:text-green-600 focus:outline-none"
-          tabindex="0"
-        >
-          <span>Services</span>
-          <svg
-            class="w-4 h-4 transform transition duration-300 group-hover:rotate-180"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </div>
-        <!-- Dropdown -->
-        <div
-          class="absolute top-full left-0 mt-1 hidden group-hover:flex group-focus-within:flex flex-col bg-white border border-gray-200 rounded-md shadow-md z-50 w-48 opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-within:opacity-100"
-        >
-          <a
-            href="landowners.html"
-            class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
-            >Land Owners</a
-          >
-          <a
-            href="#"
-            class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
-            >Option 2</a
-          >
-          <a
-            href="#"
-            class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
-            >Option 3</a
-          >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 9l-7 7-7-7"
+      />
+    </svg>
+  </summary>
+
+  <!-- Dropdown Items -->
+  <div
+    class="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-md flex flex-col z-50"
+  >
+    <a
+      href="landowners.html"
+      class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
+      >Land Owners</a
+    >
+    <a
+      href="solar.html"
+      class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
+      >Solar Contractors</a
+    >
+    <a
+      href="#"
+      class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
+      >Option 3</a
+    >
+  </div>
+</details>
+
+          <a href="about.html" class="hover:text-green-600">About us</a>
+          <a href="#" class="hover:text-green-600">Resources</a>
+          <a href="#contact-us" class="hover:text-green-600">Contact us</a>
         </div>
       </div>
-      <a href="about.html" class="hover:text-green-600">About us</a>
-      <a href="#" class="hover:text-green-600">Resources</a>
-      <a href="#" class="hover:text-green-600">Contact us</a>
-    </div>
-  </div>
-</nav>
+    </nav>
 
       <section class="relative w-full h-[800px] bg-cover bg-center font-poppins" style="background-image: url('./Asset/iStock-1848471040-min.jpg')">
         <!-- <div class="absolute inset-0 bg-black bg-opacity-30"></div> -->
@@ -180,7 +182,7 @@
       </section>
 
       <section class="bg-white xl:px-[80px] lg:px-[20px] px-[10px] lg:my-[150px] my-[50px]  font-league">
-        <div class=" flex flex-col gap-[50px] md:flex-row items-stretch">
+        <div class=" flex flex-col xl:gap-[50px] lg:gap-[10px] md:flex-row items-stretch">
           <!-- Image Section -->
           <div class="md:w-1/2">
             <img
@@ -290,7 +292,7 @@
       </div>
       </section>
 
-      <section class="xl:px-[80px] lg:px-[20px] px-[10px] md:my-[150px] my-[50px] font-league">
+      <section id="contact-us" class="xl:px-[80px] lg:px-[20px] px-[10px] md:my-[150px] my-[50px] font-league">
         <div class="container mx-auto px-4">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
             <!-- Left Column: Form -->
@@ -369,7 +371,7 @@
       </section>
   
       <!-- Footer -->
-      <footer class="bg-white font-poppins xl:px-[80px] lg:px-[20px] px-[10px]">
+      <footer class="bg-white font-poppins xl:px-[80px] lg:px-[20px] px-[10px] mb-4">
         <div class="container mx-auto px-4">
           <div
             class="grid grid-cols-2 md:grid-cols-4 gap-x-12 md:gap-x-8 items-start"
