@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -23,6 +24,9 @@
       .font-league {
         font-family: "League Spartan", sans-serif;
       }
+      .font-opensans {
+    font-family: 'Open Sans', sans-serif;
+  }
     </style>
   </head>
   <body class="bg-white">
@@ -32,11 +36,13 @@
       <div class="flex flex-wrap items-center justify-between md:justify-start">
         <!-- Logo -->
         <div class="flex items-center space-x-3 lg:mr-20 mr-4">
-          <img
-            src="./Asset/logo.png"
-            class="xl:h-[75px] h-[40px] w-auto"
-            alt="logo"
-          />
+         <a href="index.html">
+          <img href="index.html"
+          src="./Asset/logo.png"
+          class="xl:h-[75px] h-[40px] w-auto"
+          alt="logo"
+        />
+         </a>
         </div>
 
         <!-- Mobile toggle (unchanged) -->
@@ -57,24 +63,53 @@
             </svg>
           </summary>
           <div
-            class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg flex flex-col space-y-2 p-4 z-50"
-          >
-            <details class="w-full">
-              <summary class="cursor-pointer hover:text-green-600">
-                Services
-              </summary>
-              <div
-                class="ml-4 mt-2 flex flex-col space-y-1 text-sm text-[#184E77]"
-              >
-                <a href="landowners.html" class="hover:text-green-600">Land Owners</a>
-                <a href="solar.html" class="hover:text-green-600">Solar Contractors</a>
-                <a href="#" class="hover:text-green-600">Option 3</a>
-              </div>
-            </details>
-            <a href="about.html" class="hover:text-green-600">About us</a>
-            <a href="#" class="hover:text-green-600">Resources</a>
-            <a href="#contact-us" class="hover:text-green-600">Contact us</a>
-          </div>
+  class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg flex flex-col space-y-2 p-4 z-50"
+>
+  <!-- Services Dropdown -->
+  <details class="w-full">
+    <summary
+      class="cursor-pointer hover:text-green-600 py-2 border-b border-gray-200 w-full"
+    >
+      Services
+    </summary>
+    <div
+      class="ml-4 mt-2 flex flex-col space-y-1 text-sm text-[#184E77]"
+    >
+      <a
+        href="landowners.html"
+        class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+        >Land owners</a
+      >
+      <a
+        href="solar.html"
+        class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+        >Solar contractors</a
+      >
+      <a
+        href="energy.html"
+        class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+        >Energy customers</a
+      >
+    </div>
+  </details>
+
+  <!-- Other Links -->
+  <a
+    href="about.html"
+    class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+    >About us</a
+  >
+  <a
+    href="#"
+    class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+    >Resources</a
+  >
+  <a
+    href="#contact-us"
+    class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+    >Contact us</a
+  >
+</div>
         </details>
 
         <!-- Desktop Menu -->
@@ -104,24 +139,24 @@
 
   <!-- Dropdown Items -->
   <div
-    class="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-md flex flex-col z-50"
+  class="absolute top-full left-0 mt-2 w-[300px] bg-white border border-gray-200 rounded-md shadow-md flex flex-col z-50"
+>
+  <a
+    href="landowners.html"
+    class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150 border-b border-gray-200 w-full"
+    >Land owners</a
   >
-    <a
-      href="landowners.html"
-      class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
-      >Land Owners</a
-    >
-    <a
-      href="solar.html"
-      class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
-      >Solar Contractors</a
-    >
-    <a
-      href="#"
-      class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
-      >Option 3</a
-    >
-  </div>
+  <a
+    href="solar.html"
+    class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150 border-b border-gray-200 w-full"
+    >Solar contractors</a
+  >
+  <a
+    href="energy.html"
+    class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150 border-b border-gray-200 w-full"
+    >Energy customers</a
+  >
+</div>
 </details>
 
           <a href="about.html" class="hover:text-green-600">About us</a>
@@ -200,7 +235,7 @@
         >
           Tailored Solutions for Every Stakeholder
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <!-- Landowners Section -->
           <div class="bg-[#D9D9D94D] p-6 rounded-lg text-center">
             <h3
@@ -366,11 +401,11 @@
 
     <section id="contact-us" class="xl:px-[80px] lg:px-[20px] px-[10px] md:my-[150px] my-[50px] font-league">
       <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-[60px]">
           <!-- Left Column: Form -->
-          <div class="bg-white p-10 flex flex-col justify-center">
+          <div class="bg-white  flex flex-col justify-center">
             <h2
-              class="lg:text-[48px] text-[32px] font-bold text-[#165463] mb-8"
+              class="xl:text-[48px] lg:text-[42px] text-[28px] font-bold text-[#165463] mb-8"
             >
               Contact & Consultation
             </h2>
@@ -441,7 +476,6 @@
         </div>
       </div>
     </section>
-
     <!-- Footer -->
     <footer class="bg-white font-poppins xl:px-[80px] lg:px-[20px] px-[10px] mb-4">
       <div class="container mx-auto px-4">

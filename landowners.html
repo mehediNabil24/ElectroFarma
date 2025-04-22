@@ -4,38 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ElectroFarm || Landowners</title>
-    <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+  
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .font-poppins {
-      font-family: "Poppins", sans-serif;
-    }
+  <link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-    .font-league {
-      font-family: "League Spartan", sans-serif;
-    }
-  </style>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  .font-poppins {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .font-league {
+    font-family: "League Spartan", sans-serif;
+  }
+  .font-opensans {
+font-family: 'Open Sans', sans-serif;
+}
+</style>
 </head>
 <body>
-    <nav
+  <nav
       class="xl:px-[80px] lg:px-[20px] px-[10px] font-poppins lg:py-[45px] py-[30px] "
     >
       <div class="flex flex-wrap items-center justify-between md:justify-start">
         <!-- Logo -->
         <div class="flex items-center space-x-3 lg:mr-20 mr-4">
-          <img
-            src="./Asset/logo.png"
-            class="xl:h-[75px] h-[40px] w-auto"
-            alt="logo"
-          />
+         <a href="index.html">
+          <img href="index.html"
+          src="./Asset/logo.png"
+          class="xl:h-[75px] h-[40px] w-auto"
+          alt="logo"
+        />
+         </a>
         </div>
 
         <!-- Mobile toggle (unchanged) -->
@@ -56,24 +65,53 @@
             </svg>
           </summary>
           <div
-            class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg flex flex-col space-y-2 p-4 z-50"
-          >
-            <details class="w-full">
-              <summary class="cursor-pointer hover:text-green-600">
-                Services
-              </summary>
-              <div
-                class="ml-4 mt-2 flex flex-col space-y-1 text-sm text-[#184E77]"
-              >
-                <a href="landowners.html" class="hover:text-green-600">Land Owners</a>
-                <a href="solar.html" class="hover:text-green-600">Solar Contractors</a>
-                <a href="#" class="hover:text-green-600">Option 3</a>
-              </div>
-            </details>
-            <a href="about.html" class="hover:text-green-600">About us</a>
-            <a href="#" class="hover:text-green-600">Resources</a>
-            <a href="#contact-us" class="hover:text-green-600">Contact us</a>
-          </div>
+  class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg flex flex-col space-y-2 p-4 z-50"
+>
+  <!-- Services Dropdown -->
+  <details class="w-full">
+    <summary
+      class="cursor-pointer hover:text-green-600 py-2 border-b border-gray-200 w-full"
+    >
+      Services
+    </summary>
+    <div
+      class="ml-4 mt-2 flex flex-col space-y-1 text-sm text-[#184E77]"
+    >
+      <a
+        href="landowners.html"
+        class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+        >Land owners</a
+      >
+      <a
+        href="solar.html"
+        class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+        >Solar contractors</a
+      >
+      <a
+        href="energy.html"
+        class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+        >Energy customers</a
+      >
+    </div>
+  </details>
+
+  <!-- Other Links -->
+  <a
+    href="about.html"
+    class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+    >About us</a
+  >
+  <a
+    href="#"
+    class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+    >Resources</a
+  >
+  <a
+    href="#contact-us"
+    class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+    >Contact us</a
+  >
+</div>
         </details>
 
         <!-- Desktop Menu -->
@@ -103,24 +141,24 @@
 
   <!-- Dropdown Items -->
   <div
-    class="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-md flex flex-col z-50"
+  class="absolute top-full left-0 mt-2 w-[300px] bg-white border border-gray-200 rounded-md shadow-md flex flex-col z-50"
+>
+  <a
+    href="landowners.html"
+    class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150 border-b border-gray-200 w-full"
+    >Land owners</a
   >
-    <a
-      href="landowners.html"
-      class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
-      >Land Owners</a
-    >
-    <a
-      href="solar.html"
-      class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
-      >Solar Contractors</a
-    >
-    <a
-      href="#"
-      class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
-      >Option 3</a
-    >
-  </div>
+  <a
+    href="solar.html"
+    class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150 border-b border-gray-200 w-full"
+    >Solar contractors</a
+  >
+  <a
+    href="energy.html"
+    class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150 border-b border-gray-200 w-full"
+    >Energy customers</a
+  >
+</div>
 </details>
 
           <a href="about.html" class="hover:text-green-600">About us</a>
@@ -235,15 +273,15 @@
 
       <section id="contact-us" class="xl:px-[80px] lg:px-[20px] px-[10px] md:my-[150px] my-[50px] font-league">
         <div class="container mx-auto px-4">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-[60px]">
             <!-- Left Column: Form -->
-            <div class="bg-white p-10 flex flex-col justify-center">
+            <div class="bg-white  flex flex-col justify-center">
               <h2
-                class="lg:text-[48px] text-[32px] font-bold text-[#165463] mb-8"
+                class="xl:text-[48px] lg:text-[42px] text-[28px] font-bold text-[#165463] mb-8"
               >
                 Contact & Consultation
               </h2>
-              <form class="md:space-y-[70px] space-y-10 w-full mx-auto">
+              <form class="space-y-14 w-full mx-auto">
                 <!-- Name Field -->
                 <div class="relative group">
                   <label
@@ -270,7 +308,21 @@
                   />
                 </div>
   
-               
+                <!-- Dropdown Field -->
+                <div class="relative group">
+                  <label
+                    class="absolute -top-2 left-4 px-1 bg-white text-[#6B7280] text-[14px] font-normal group-focus-within:text-[#165463]"
+                  >
+                    What do you want to do?
+                  </label>
+                  <select
+                    class="w-full p-4 pt-5 border border-[#D1D5DB] rounded-[8px] focus:outline-none focus:border-[#C1E34E] focus:ring-1 focus:ring-[#C1E34E] text-[#6B7280] text-[16px] font-normal appearance-none bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZXZybi1kb3duIj48cGF0aCBkPSJtNyA3IDUgNSA1LTUiLz48L3N2Zz4=')] bg-no-repeat bg-[right_1rem_center] bg-[length:16px_16px]"
+                  >
+                    <option value="" disabled selected></option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                  </select>
+                </div>
   
                 <!-- Submit Button -->
                 <div class="flex justify-center">
@@ -278,7 +330,7 @@
                     type="submit"
                     class="bg-[#C1E34E] text-[#165463] px-10 py-3 hover:bg-[#b0d145] transition text-[16px] font-bold rounded-[5px]"
                   >
-                  Request a consultation
+                    Get in touch
                   </button>
                 </div>
               </form>
@@ -288,7 +340,7 @@
   
             <div class="bg-cover bg-center">
               <img
-                src="./Asset/iStock-1330612804-min.jpg"
+                src="./Asset/iStock-1178171610-min.jpg"
                 alt="Solar Panels"
                 class="w-full md:h-[700px] h-[400px] object-cover"
               />

@@ -5,15 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ElectroFarm || About</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      .font-poppins {
-        font-family: 'Poppins', sans-serif;
-      }
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-      .font-league {
-    font-family: 'League Spartan', sans-serif;
-  }
-    </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .font-poppins {
+      font-family: "Poppins", sans-serif;
+    }
+
+    .font-league {
+      font-family: "League Spartan", sans-serif;
+    }
+    .font-opensans {
+  font-family: 'Open Sans', sans-serif;
+}
+  </style>
 </head>
 <body>
   <nav
@@ -22,11 +36,13 @@
       <div class="flex flex-wrap items-center justify-between md:justify-start">
         <!-- Logo -->
         <div class="flex items-center space-x-3 lg:mr-20 mr-4">
-          <img
-            src="./Asset/logo.png"
-            class="xl:h-[75px] h-[40px] w-auto"
-            alt="logo"
-          />
+         <a href="index.html">
+          <img href="index.html"
+          src="./Asset/logo.png"
+          class="xl:h-[75px] h-[40px] w-auto"
+          alt="logo"
+        />
+         </a>
         </div>
 
         <!-- Mobile toggle (unchanged) -->
@@ -47,24 +63,53 @@
             </svg>
           </summary>
           <div
-            class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg flex flex-col space-y-2 p-4 z-50"
-          >
-            <details class="w-full">
-              <summary class="cursor-pointer hover:text-green-600">
-                Services
-              </summary>
-              <div
-                class="ml-4 mt-2 flex flex-col space-y-1 text-sm text-[#184E77]"
-              >
-                <a href="landowners.html" class="hover:text-green-600">Land Owners</a>
-                <a href="solar.html" class="hover:text-green-600">Solar Contractors</a>
-                <a href="#" class="hover:text-green-600">Option 3</a>
-              </div>
-            </details>
-            <a href="about.html" class="hover:text-green-600">About us</a>
-            <a href="#" class="hover:text-green-600">Resources</a>
-            <a href="#contact-us" class="hover:text-green-600">Contact us</a>
-          </div>
+  class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg flex flex-col space-y-2 p-4 z-50"
+>
+  <!-- Services Dropdown -->
+  <details class="w-full">
+    <summary
+      class="cursor-pointer hover:text-green-600 py-2 border-b border-gray-200 w-full"
+    >
+      Services
+    </summary>
+    <div
+      class="ml-4 mt-2 flex flex-col space-y-1 text-sm text-[#184E77]"
+    >
+      <a
+        href="landowners.html"
+        class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+        >Land owners</a
+      >
+      <a
+        href="solar.html"
+        class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+        >Solar contractors</a
+      >
+      <a
+        href="energy.html"
+        class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+        >Energy customers</a
+      >
+    </div>
+  </details>
+
+  <!-- Other Links -->
+  <a
+    href="about.html"
+    class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+    >About us</a
+  >
+  <a
+    href="#"
+    class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+    >Resources</a
+  >
+  <a
+    href="#contact-us"
+    class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+    >Contact us</a
+  >
+</div>
         </details>
 
         <!-- Desktop Menu -->
@@ -94,24 +139,24 @@
 
   <!-- Dropdown Items -->
   <div
-    class="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-md flex flex-col z-50"
+  class="absolute top-full left-0 mt-2 w-[300px] bg-white border border-gray-200 rounded-md shadow-md flex flex-col z-50"
+>
+  <a
+    href="landowners.html"
+    class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150 border-b border-gray-200 w-full"
+    >Land owners</a
   >
-    <a
-      href="landowners.html"
-      class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
-      >Land Owners</a
-    >
-    <a
-      href="solar.html"
-      class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
-      >Solar Contractors</a
-    >
-    <a
-      href="#"
-      class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150"
-      >Option 3</a
-    >
-  </div>
+  <a
+    href="solar.html"
+    class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150 border-b border-gray-200 w-full"
+    >Solar contractors</a
+  >
+  <a
+    href="energy.html"
+    class="block px-4 py-2 hover:bg-gray-100 hover:text-lime-600 transition-colors duration-150 border-b border-gray-200 w-full"
+    >Energy customers</a
+  >
+</div>
 </details>
 
           <a href="about.html" class="hover:text-green-600">About us</a>
@@ -126,7 +171,7 @@
       
         <div class="relative z-10 flex items-center justify-center h-full px-4">
           <div class="bg-white bg-opacity-75 p-6  md:p-12 max-w-7xl text-center rounded-md ">
-            <p class="text-black font-[500] text-sm md:text-[24px] text-center leading-relaxed">
+            <p class="text-black font-[500] font-poppins text-sm md:text-[24px] text-center leading-relaxed">
               Our mission is to bridge the gap between landowners, solar contractors, and energy customers
               by providing tailored solutions that optimize agricultural revenue and enhance solar efficiency.
               Through precision data collection, advanced geospatial analysis, and continuous optimization,
@@ -182,7 +227,7 @@
       </section>
 
       <section class="bg-white xl:px-[80px] lg:px-[20px] px-[10px] lg:my-[150px] my-[50px]  font-league">
-        <div class=" flex flex-col xl:gap-[50px] lg:gap-[10px] md:flex-row items-stretch">
+        <div class=" flex flex-col xl:gap-[50px] lg:gap-[20px] gap-[20px] md:flex-row items-stretch ">
           <!-- Image Section -->
           <div class="md:w-1/2">
             <img
@@ -193,14 +238,14 @@
           </div>
       
           <!-- Text Section -->
-          <div class="md:w-1/2 flex flex-col justify-center p-8 lg:p-12">
+          <div class="md:w-1/2 flex flex-col justify-center p-3 ">
             <!-- Main Heading -->
             <h2 class=" text-3xl lg:text-[48px] font-bold text-[#165463] mb-[100px] ">
               How We Work
             </h2>
       
             <!-- Subsections -->
-            <div class="lg:space-y-[90px] space-y-[50px]">
+            <div class="lg:space-y-[90px] space-y-[40px]">
               <!-- Research -->
               <div class="mb-[100px]">
                 <h3 class="text-xl font-bold text-[#165463] mb-5">Research</h3>
@@ -275,7 +320,7 @@
           <h2 class="md:text-[48px] text-[32px] font-bold text-center text-teal-900 mb-8 font-league">More About Electrofarm.ai</h2>
   
           <!-- Paragraphs -->
-          <div class="text-center">
+          <div class="text-center font-[400] font-opensans">
               <p class="text-black text-[18px] text-center mb-6">
                   Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu anean sed diam urna tempor. Pulvinar vivamus fringilla lacuna nec metus bibendum egestas. Laculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
               </p>
@@ -294,11 +339,11 @@
 
       <section id="contact-us" class="xl:px-[80px] lg:px-[20px] px-[10px] md:my-[150px] my-[50px] font-league">
         <div class="container mx-auto px-4">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-[60px]">
             <!-- Left Column: Form -->
-            <div class="bg-white p-10 flex flex-col justify-center">
+            <div class="bg-white  flex flex-col justify-center">
               <h2
-                class="lg:text-[48px] text-[32px] font-bold text-[#165463] mb-8"
+                class="xl:text-[48px] lg:text-[42px] text-[28px] font-bold text-[#165463] mb-8"
               >
                 Contact & Consultation
               </h2>
