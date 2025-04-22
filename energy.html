@@ -16,6 +16,11 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <style>
       .font-poppins {
         font-family: "Poppins", sans-serif;
       }
@@ -26,6 +31,12 @@
       .font-opensans {
     font-family: 'Open Sans', sans-serif;
   }
+    </style>
+    <style>
+      details[open] .dropdown-button-svg {
+        color: #16a34a; /* Equivalent to Tailwind's text-green-600 */
+        transform: scale(1.2); /* Equivalent to Tailwind's scale-110 */
+      }
     </style>
 </head>
 <body>
@@ -45,71 +56,72 @@
         </div>
 
         <!-- Mobile toggle (unchanged) -->
-        <details class="md:hidden relative">
-          <summary class="list-none cursor-pointer">
-            <svg
-              class="w-6 h-6 text-blue-900"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </summary>
-          <div
-  class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg flex flex-col space-y-2 p-4 z-50"
->
-  <!-- Services Dropdown -->
-  <details class="w-full">
-    <summary
-      class="cursor-pointer hover:text-green-600 py-2 border-b border-gray-200 w-full"
+        <!-- Dropdown Menu -->
+<details class="md:hidden relative">
+  <summary class="list-none cursor-pointer">
+    <svg
+      class="w-6 h-6 text-blue-900 dropdown-button-svg"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
     >
-      Services
-    </summary>
-    <div
-      class="ml-4 mt-2 flex flex-col space-y-1 text-sm text-[#184E77]"
-    >
-      <a
-        href="landowners.html"
-        class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
-        >Land owners</a
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16M4 18h16"
+      />
+    </svg>
+  </summary>
+  <div
+    class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg flex flex-col space-y-2 p-4 z-50"
+  >
+    <!-- Services Dropdown -->
+    <details class="w-full">
+      <summary
+        class="cursor-pointer hover:text-green-600 py-2 border-b border-gray-200 w-full"
       >
-      <a
-        href="solar.html"
-        class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
-        >Solar contractors</a
+        Services
+      </summary>
+      <div
+        class="ml-4 mt-2 flex flex-col space-y-1 text-sm text-[#184E77]"
       >
-      <a
-        href="energy.html"
-        class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
-        >Energy customers</a
-      >
-    </div>
-  </details>
+        <a
+          href="landowners.html"
+          class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+          >Land owners</a
+        >
+        <a
+          href="solar.html"
+          class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+          >Solar contractors</a
+        >
+        <a
+          href="energy.html"
+          class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+          >Energy customers</a
+        >
+      </div>
+    </details>
 
-  <!-- Other Links -->
-  <a
-    href="about.html"
-    class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
-    >About us</a
-  >
-  <a
-    href="#"
-    class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
-    >Resources</a
-  >
-  <a
-    href="#contact-us"
-    class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
-    >Contact us</a
-  >
-</div>
-        </details>
+    <!-- Other Links -->
+    <a
+      href="about.html"
+      class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+      >About us</a
+    >
+    <a
+      href="#"
+      class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+      >Resources</a
+    >
+    <a
+      href="#contact-us"
+      class="hover:text-green-600 py-2 border-b border-gray-200 block w-full"
+      >Contact us</a
+    >
+  </div>
+</details>
 
         <!-- Desktop Menu -->
         <div
